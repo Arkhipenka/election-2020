@@ -1,0 +1,165 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+header{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #4f9292;
+	position: fixed;
+}
+h1{
+	
+	font-style: italic;
+	font-weight: bold;
+	font-size: 44px;
+	margin: 25px 20px;
+	line-height: 45px;
+	text-transform: uppercase;
+	color: #fff;
+}
+header img{
+	height: 100px;
+}
+
+article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100%;
+	
+}
+article:nth-child(2n){
+	background: #ccc;
+}
+.btn-team{
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	border-radius:15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background: #fe9400;
+}
+
+.number-candidate{
+	text-transform: uppercase;
+    color: #4f9292;
+    font-size: 46px;
+    font-style: italic;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h3{
+	margin: 20px auto 10px;
+	font-weight: bold;
+	font-size: 36px;
+	color:#4f9292;
+	text-align: center;
+	text-transform: uppercase;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin: 0 50px;
+	
+}
+div{
+	
+	width: 180px;
+	text-align: center;
+	margin: 20px;
+}
+div img{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	background: #f2f;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+label{
+	font-size: 26px;
+	font-weight: bold;
+	color: #555;
+	text-transform: uppercase;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 700px;
+	text-align: center;
+}
+input{
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #c4c;
+	font-size: 26px;
+	outline: none;
+	min-width: 500px;
+}
+button{
+	font-size: 38px;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+	padding: 7px 55px;
+	margin-top: 60px;
+	border-radius: 10px;
+	outline: none;
+	border:none;
+	color: #fff;
+	background: #fe9400;
+}
+article:last-child section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+article:last-child img{
+	width: 200px;
+	height: 200px;
+	background: #ccc;
+	border-radius: 50%;
+}
+h4{
+	font-size: 36px;
+	margin: 20px 0 10px;
+	color: #fe9400;
+	font-weight: bold;
+}
+article:last-child p{
+	margin: 5px 0;
+}
+footer{
+	font-size: 18px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #4f9292;
+	height: 120px;
+	width: 100%;
+}
+footer a{
+	padding:15px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin: 10px;
+}
