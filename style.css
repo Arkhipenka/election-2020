@@ -17,7 +17,6 @@ h1{
 	font-weight: bold;
 	font-size: 44px;
 	margin: 25px 20px;
-	line-height: 45px;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -48,7 +47,9 @@ article:nth-child(2n){
 	color: #fff;
 	background: #fe9400;
 }
-
+article p{
+	text-align: center;
+}
 .number-candidate{
 	text-transform: uppercase;
     color: #4f9292;
@@ -74,7 +75,7 @@ h3{
 	margin: 0 50px;
 	
 }
-div{
+article div{
 	
 	width: 180px;
 	text-align: center;
@@ -91,6 +92,7 @@ form{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 label{
 	font-size: 26px;
@@ -111,7 +113,7 @@ input{
 	border-bottom: 2px solid #c4c;
 	font-size: 26px;
 	outline: none;
-	min-width: 500px;
+	width: 500px;
 }
 button{
 	font-size: 38px;
@@ -148,18 +150,89 @@ article:last-child p{
 	margin: 5px 0;
 }
 footer{
+	box-sizing: border-box;
 	font-size: 18px;
 	color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: #4f9292;
-	height: 120px;
+	min-height: 120px;
 	width: 100%;
+	padding: 30px;
+}
+footer div{
+	display: flex;
+	justify-content: center;
+
+	flex-wrap: wrap;
 }
 footer a{
 	padding:15px;
 	border: 2px solid #fff;
 	border-radius: 50%;
 	margin: 10px;
+}
+@media screen and (max-width: 768px){
+	header{
+		padding: 0 20px;
+	}
+	h1{
+		font-size: 32px;
+	}
+	header img{
+		height: 70px;
+		width: 175px;
+	}
+	h3{
+		margin: 0 20px;
+	}
+}
+@media screen and (max-width: 730px){
+	label{
+		word-wrap: break-word;
+		max-width: 500px;
+	}
+	input{
+		max-width: 350px;
+	}
+}
+@media screen and (max-width: 530px){
+	h1{
+		font-size: 22px;
+	}
+	.number-candidate{
+		font-size: 36px;
+	}
+	label{
+		display: flex;
+		flex-direction: column;
+		width: 370px;
+	}
+	header img{
+		height: 60px;
+		width: 155px;
+	}
+	}
+	@media screen and (max-width: 410px){
+	.number-candidate{
+		font-size: 26px;
+	}	
+	label{
+	
+		width: 220px;
+	}
+	input{
+		max-width: 250px;
+	}
+	button{
+		font-size: 32px;
+	}
+	h1{
+		font-size: 15px;
+	}
+	header img{
+		height: 50px;
+		width: 125px;
+	}
 }
